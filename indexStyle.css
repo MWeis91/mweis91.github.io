@@ -1,93 +1,122 @@
-
 body
 {
-   background-color: #404040;
-   margin: 0;
+   background-color: #41474F;
+   margin: 0px;
+   padding: 0px;
+}
+
+.Top
+{
+    display: flex;
+    height: 100px;
+    width: 100%;
 }
 
 #Title
 {
-    text-align: left;
-    color: white;
-    font-family: "Tahoma",Tahoma, sans-serif;
-    margin-left: 0;
-    overflow: auto;
-    margin-left: 10%;
-    padding-bottom: 20px;
-    background-color: #404040;
+    margin: 0 auto;
 }
 
-#Title h1
+#Title img
 {
-    color: #26A1FF;
-    margin-bottom: 0;
-}
-#Title h3
-{
-    font-weight: normal;
-    margin-top: 0;
-}
-
-#Menu ul
-{
-    list-style-type: none;
+    padding: 0;
     margin: 0;
-    padding: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-    text-align: center;
+    height: 100px;
+    width: auto;
 }
 
-#Menu ul li
+.Menu
 {
-    display: inline-block; 
-}
-#Menu ul li a
-{
-    color: #000;
-    padding: 10px 20px 5px 10px;
-    padding-left: 0;
-    text-decoration: none;
-    font-family: "Tahoma",Tahoma, sans-serif;
-    font-size: larger;
-    text-decoration: none;
-    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+    float: right;
 }
 
-#Menu ul li a:visited
+.Dropdown_Button
 {
-    text-decoration: none;
-    size: auto;
+    -webkit-backface-visibility: hidden;
+    background-image: url(Menu-Icon-Passive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 100px;
+    width: 100px;
+    
+    -webkit-perspective: 1000;
+    -webkit-transition: 1s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.Dropdown_Button:hover
+{
+    background-image: url(Menu-Icon-Hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 100px;
+    width: 100px;
+    
+    -webkit-perspective: 1000;
+    -webkit-transition: 1s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.Dropdown_Button:focus
+{
+    outline: none;
+}
+
+.Dropdown_Button span
+{
+    display: none;
+}
+
+.Dropdown_Content
+{
+    display: none;
+    position: absolute;
+    background-color: #41474F;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.Dropdown_Button:hover .Dropdown_Content
+{
+    display: block;
+}
+
+.Dropdown_Content a
+{
     color: black;
+    padding: 0 auto;
+    text-decoration: none;
+    width: 200px;
+    display: block;
 }
 
-#Menu ul li a:active, a:hover
+.Frame
 {
-    background-color: #26A1FF;
-    size: auto;
-    color: #f1f1f1;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   float: top;
 }
 
-#frame
+.Frame #iFrameDisplay
 {
-   padding-top: 60px;
-   overflow: auto;
-}
-
-#frame iframe
-{
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: #f1f1f1;
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    width: 100%;
+    height: 100%;
+    background-color: #F6FFFF;
     border: none;
 }
 

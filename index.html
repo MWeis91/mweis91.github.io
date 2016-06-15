@@ -10,30 +10,33 @@
         
     </head>
     <body>
-        <header>
+        
+        <div class="Top">
+            
             <div id="Title">
-                <h1>Matthew Weis</h1>
-                <h3>Software Engineer</h3>
+                
+                <img src="MatthewWeis.png" alt="Matthew Weis" title="Matthew Weis">
             </div>
-        </header>
-            
-        <nav>
-            <div id="Menu">
-            
-                <ul>
-                    <li><a href="home.html"             target="iFrameDisplay">Home</a></li>
-                    <li><a href="aboutMe.html"          target="iFrameDisplay">About Me</a></li>
-                    <li><a href="recentProjects.html"   target="iFrameDisplay">Recent Projects</a></li>
-                    <li><a href="pastWork.html"         target="iFrameDisplay">Past Work</a></li>
-                    <li><a href="skills.html"           target="iFrameDisplay">Skills</a></li>
-                    <li><a href="contact.html"          target="iFrameDisplay">Contact</a></li>
-                </ul>
+
+            <div class="Menu">
+                <button class="Dropdown_Button">
+                    <span>Cancel</span>
+                </button>
+                <div class="Dropdown_Content">
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Contact</a>
+                </div>
+                    
             </div>
-        </nav>
+            
+        </div>
+            
         
         <section>
-            <div id="frame">
-                <iframe name="iFrameDisplay" src="home.html"></iframe>
+            <div class="Frame">
+                <iframe id="iFrameDisplay" src="home.html"></iframe>
             </div>
         </section>
         
