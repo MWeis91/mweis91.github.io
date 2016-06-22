@@ -3,13 +3,29 @@ body
    background-color: #41474F;
    margin: 0px;
    padding: 0px;
+   
+   text-align: center;
+}
+
+img[src$=".png"]
+{
+    image-rendering: optimizeQuality;
 }
 
 .Top
 {
     display: flex;
+    position: fixed;
+    top: 0%;
+    float: top;
     height: 100px;
     width: 100%;
+    z-index: 999;
+}
+
+header
+{
+    
 }
 
 #Title
@@ -21,8 +37,10 @@ body
 {
     padding: 0;
     margin: 0;
+    padding-left: 100px;
     height: 100px;
     width: auto;
+    overflow: auto;
 }
 
 .Menu
@@ -30,6 +48,8 @@ body
     position: relative;
     display: inline-block;
     float: right;
+    z-index: 999;
+    font-size: 0;
 }
 
 .Dropdown_Button
@@ -85,40 +105,180 @@ body
     display: none;
     position: absolute;
     background-color: #41474F;
-    min-width: 200px;
-    padding: 0;
-    margin: 0;
-}
-
-.Dropdown_Button:hover .Dropdown_Content
-{
-    display: block;
+    min-width: 100px;
+    right: 0;
 }
 
 .Dropdown_Content a
 {
-    color: black;
-    padding: 0 auto;
+    color: #41474F;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #3BABE8;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
+    margin: 0 auto;
     text-decoration: none;
-    width: 200px;
+    text-align: center;
     display: block;
+    
+    -webkit-perspective: 1000;
+    -webkit-transition: 1s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.Dropdown_Content a:hover
+{
+    color: #3BABE8;
+    background-color: #41474F;
+    
+    -webkit-perspective: 1000;
+    -webkit-transition: 1s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.Menu:hover .Dropdown_Content
+{
+    display: block;
+}
+
+.Menu:hover .Dropdown_Button
+{
+    background-image: url(Menu-Icon-Hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .Frame
 {
    width: 100%;
-   height: 100%;
+   height: auto;
+   top: 100px;
+   bottom: 50px;
    position: fixed;
-   float: top;
+   display: flex;
+   overflow: auto;
+   float: inside;
 }
 
 .Frame #iFrameDisplay
 {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #F6FFFF;
     border: none;
 }
 
+footer
+{
+    z-index: 998;
+    height: 50px;
+    position: fixed;
+    float: none;
+    background-color: #41474F;
+    width: 100%;
+    bottom: 0%;
+}
 
+.Contacts ul
+{
+    list-style-type: none;
+    
+    display: flex;   
+    flex-direction: row;  
+    justify-content: center;   
+    align-items: center;
+    flex-wrap: nowrap;
+   
+    
+    margin-top: 0px;
+    
+    padding: 0 auto;
+    margin: 0 auto;
+    
+}
 
+.Contacts li
+{
+    height: 50px;
+    width: 40px;
+    
+    padding: 0 20px;
+    
+    border-right: 3px #3BABE8 solid;
+    
+}
+
+.Contacts li:first-child
+{
+    width: 50px;
+}
+.Contacts li:last-child
+{
+    border-right: none;
+}
+
+.Contacts li img
+{
+    transition: 1s;
+    padding-top: 5px;
+    
+    height: 40px;
+    
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.Contacts li:first-child img
+{
+    padding-top: 10px;
+    height: 33px;
+}
+
+.Contacts a
+{
+    display: none;
+}
+
+.Contacts li:hover img
+{
+    display: none;
+}
+
+.Contacts li:hover
+{
+    padding-right: 0;
+    padding-left: 0;
+    width: fit-content;
+    
+
+}
+
+.Contacts li:hover a
+{    
+    display: flex;
+    
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    height: 50px;
+    width: max-content;
+    
+    padding: 0 20px;
+    margin: 0 auto;
+    
+    background-color: #3BABE8;
+    color: #41474F;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
