@@ -254,7 +254,8 @@ footer
 {
     padding-right: 0;
     padding-left: 0;
-    width: fit-content;
+    width: max-content;
+    
     
 
 }
@@ -263,7 +264,7 @@ footer
 {    
     display: flex;
     
-    width: fit-content;
+    width: max-content;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
