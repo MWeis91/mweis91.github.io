@@ -23,11 +23,6 @@ img[src$=".png"]
     z-index: 999;
 }
 
-header
-{
-    
-}
-
 #Title
 {
     margin: 0 auto;
@@ -196,13 +191,11 @@ footer
     justify-content: center;   
     align-items: center;
     flex-wrap: nowrap;
-   
-    
+      
     margin-top: 0px;
     
     padding: 0 auto;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 .Contacts li
@@ -257,9 +250,6 @@ footer
     padding-right: 0;
     padding-left: 0;
     width: max-content;
-    
-    
-
 }
 
 .Contacts li:hover a
@@ -285,20 +275,13 @@ footer
     font-weight: bold;
     
 }
-
-
 /****************************************************************/
-
-
-
 ::-webkit-scrollbar
 {
     width: 15px;
     background-color: transparent;
     margin: 0;
-    padding: 0;
-    
-    
+    padding: 0;   
 }
 
 
@@ -312,8 +295,7 @@ footer
     
     border-bottom-color: #3BABE8;
     border-bottom-style: solid;
-    border-bottom-width: 3px;
-    
+    border-bottom-width: 3px;    
 }
 
 ::-webkit-scrollbar-thumb
@@ -384,24 +366,29 @@ footer
     
     margin: 20px 10%;
     
+    text-align: left;
+    
 }
 
 .About .SubsectionContainer
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: fit-content;
     flex-wrap: wrap;
+    
+    margin-bottom: 20px;
+    padding-bottom: 0;
     padding: 0 10%;
+    
 }
 
 .Subsection
 {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
     align-items: flex-start;
-    overflow: auto;
     background-color: #41474F;
     color: #3BABE8;
     border-radius: 10px;
@@ -435,23 +422,19 @@ footer
     
     font-size: 30px;
     font-weight: bold;
-    font-variant: small-caps;
-    
+    font-variant: small-caps;   
 }
 
 .SSList
 {
     padding: 0;
     margin: 0;
-    
+    text-align: left;
 }
 
 .SSList ul
 {
     list-style-type: symbols;
-    
-    margin:0 auto;
-    padding: 0 auto;
 }
 
 .SSList li
@@ -464,8 +447,7 @@ footer
     padding:0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .Skills
@@ -513,8 +495,8 @@ footer
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px 5%;
-    
+    height: fit-content;
+    padding: 5px 5%;    
 }
 
 .LangBox .HoverContent

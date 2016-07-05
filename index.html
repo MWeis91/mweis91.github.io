@@ -3,6 +3,22 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="indexStyle.css">
+        
+        <script>
+            $('a[href^="#"]').on('click', function(event) {
+
+                var target = $(this.getAttribute('href'));
+
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+
+            });
+        </script>
+        
         <title>Matthew Weis</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +49,7 @@
             <div class="Frame">
                 <div id="iFrameDisplay">
                     <div class="About">
+                        <div id="About"></div>
                         <div class="SectionTitle">About:</div>
                             <div class="Content">
                                 <div class="PersonalStatement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at interdum lectus. In ut aliquet ligula. Aenean mattis lectus tellus, a suscipit elit egestas vitae. Nam euismod erat non justo consectetur laoreet. Curabitur ullamcorper dui sed magna laoreet, non fringilla est posuere. Nunc suscipit sapien nec elit laoreet, in auctor lectus sollicitudin. In dolor nunc, rutrum quis pretium eget, ullamcorper quis quam. Nunc sem urna, eleifend id massa eu, lacinia ultricies elit. Etiam ut elit a felis dignissim congue a vitae ipsum. Quisque in velit porta, molestie purus quis, aliquet arcu. Integer lectus ipsum, suscipit a dapibus a, tristique vel lectus. Phasellus lorem orci, dapibus at auctor a, interdum ut justo. Curabitur interdum ante dolor, id pellentesque turpis elementum nec. In id arcu quis ligula facilisis pretium. Cras rhoncus nunc posuere ligula sodales faucibus. Duis interdum, est in venenatis molestie, lectus nisl ornare ante, a molestie ex enim consequat velit. Donec maximus tortor risus, vitae finibus enim varius id. Vestibulum consequat quam ut mi gravida, quis posuere velit laoreet. Integer euismod libero vitae scelerisque ultrices. Donec in libero nec eros suscipit placerat. Fusce a vestibulum augue, imperdiet finibus velit. Praesent ut sapien mattis, dapibus est gravida, cursus quam. Vestibulum at euismod ipsum. Nam tortor libero, rutrum at malesuada in, volutpat et mi. </div>
@@ -60,7 +77,7 @@
                                     <div class="Subsection">
                                         <div class="Personal">
                                             <div class="SSTop">
-                                                Personal
+                                                <img src="Personal-Icon-Circle.png" alt="none">Personal
                                             </div>
                                         </div>
                                     </div>
@@ -89,6 +106,7 @@
                     </div>
 
                     <div class="Skills">
+                        <div id="Skills"></div>
                         <div class="SectionTitle">Skills:</div>
                         <div class="Content">
                             <div class="SkillsContainer">
@@ -179,6 +197,7 @@
                     </div>
 
                     <div class="Projects">
+                        <div id="Projects"></div>
                         <div class="SectionTitle">Projects:</div>
                         <div class="Content">
                             <div class="ProjectRowContainer">
