@@ -366,6 +366,10 @@ footer
     
     margin: 20px 10%;
     
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 0;
+    
     text-align: left;
     
 }
@@ -382,6 +386,18 @@ footer
     padding-bottom: 0;
     padding: 0 10%;
     
+}
+
+.PersonalStatement p
+{
+    text-indent: 50px;
+    margin: 15px 0;
+}
+
+.PersonalStatement q
+{
+    text-indent: 0;
+    font-style: italic;
 }
 
 .Subsection
@@ -406,7 +422,7 @@ footer
     justify-content: flex-start;
     flex-wrap: nowrap;
     height: 100px;
-    padding-right: 5px;
+    padding-right: 15px;
     
 }
 
@@ -435,6 +451,9 @@ footer
 .SSList ul
 {
     list-style-type: symbols;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 5px 0;
 }
 
 .SSList li
