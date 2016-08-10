@@ -21,6 +21,7 @@ img[src$=".png"]
     height: 100px;
     width: 100%;
     z-index: 999;
+    border-bottom: #3BABE8 groove thin;
 }
 
 #Title
@@ -45,12 +46,13 @@ img[src$=".png"]
     float: right;
     z-index: 999;
     font-size: 0;
+    
 }
 
 .Dropdown_Button
 {
     -webkit-backface-visibility: hidden;
-    background-image: url(Menu-Icon-Passive.png);
+    background-image: url(./img/Menu-Icon-Passive.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -69,7 +71,7 @@ img[src$=".png"]
 
 .Dropdown_Button:hover
 {
-    background-image: url(Menu-Icon-Hover.png);
+    background-image: url(./img/Menu-Icon-Hover.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -142,7 +144,7 @@ img[src$=".png"]
 
 .Menu:hover .Dropdown_Button
 {
-    background-image: url(Menu-Icon-Hover.png);
+    background-image: url(./img/Menu-Icon-Hover.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -173,6 +175,7 @@ img[src$=".png"]
 
 footer
 {
+    border-top: #3BABE8 groove thin;
     z-index: 998;
     height: 50px;
     position: fixed;
@@ -310,25 +313,25 @@ footer
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
-    padding-left: 5%;
+    padding-left: 6%;
     margin-right: 0;
     padding-right: 50px;
     padding-top: 10px;
     font-family: "Josefin Sans";
-    font-size: 35px;
+    font-size: 40px;
     font-variant: small-caps;
-    font-weight: bold;
+    font-weight: 700;
     
     color: #41474F;
-    transition: 1.5s;
+    transition: 1s ease;
     
 }
 
 .SectionTitle:hover
 {
-    padding-left: 0;
+    padding-left: 5px;
     color: #3BABE8;
-    transition: 1.5s;
+    transition: 1s ease;
     cursor: default
 }
 
@@ -337,8 +340,8 @@ footer
     color: #41474F;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -398,6 +401,13 @@ footer
 {
     text-indent: 0;
     font-style: italic;
+}
+
+.Quote
+{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 .Subsection
@@ -472,12 +482,14 @@ footer
 .Skills
 {
     background-color: #F6FFFF;
+    
 }
 
 .SkillTitle
 {
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 600;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -492,19 +504,21 @@ footer
 .LangBox
 {
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
     max-height: max-content;
-    width: 200px;
+    width: 300px;
     background-color: #41474F;
     color: #3BABE8;
     border-radius: 10px;
     
-    padding: 5px 0;
-    margin-bottom: 5px;
+    padding: 7px 0;
+    margin-bottom: 10px;
     
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     
-    transition: 1s ease-out;
+
 }
 
 .LangBoxContainer .row
@@ -522,22 +536,16 @@ footer
 {
     max-height: 0;    
     overflow: hidden;
-    transition: max-height 1s ease-in;   
+    transition: max-height 0.5s ease-out;   
     text-align: left;
 }
 
 .LangBox:hover > .HoverContent
 {
     display: flex;
-    max-height: 300px;
+    max-height: 400px;
           
     transition: max-height 1s ease-in;
-}
-
-.LangBox:hover
-{
-    width: 250px;
-    transition: 1s;
 }
 
 .HoverContent ul
@@ -550,34 +558,65 @@ footer
     background-color: #E6EDED;
 }
 
-.ProjectRowContainer
+.ProjContainer
 {
-    padding: 0;
-    display: flex;
     flex-direction: column;
+    background-color: #41474F;
+    border-radius: 10px;
     
-    align-items: center;
 }
-
-.ProjectRow
+.ProjSubcontainer
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.Project
-{
-    width: 400px;
-    height: 400px;
-    text-align: center;
     color: #3BABE8;
     
-    background-color: #41474F;
+    padding: 20px 20px;
     
-    padding: 10px;
-    margin: 15px;
+    text-align: left;
+   
+}
+
+.ProjTitle
+{
+    font-size: 25px;
+    font-weight: 700;
+    font-variant: small-caps;
+    border-bottom: #3BABE8 dashed thin;
+    padding-bottom: 10px;
+}
+
+.ProjContent
+{
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.ProjContent p
+{
+    text-indent: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.ProjImages
+{    
+    display: flex;
+    background-color: #3BABE8;
     
     border-radius: 10px;
+    
+
+    margin: 10px auto;
+
+    width: fit-content;
+    height: fit-content;
 }
+
+#GameEnginePicture
+{
+   border-radius: 10px;
+   opacity: 0.85;
+   height: 400px;
+}
+
