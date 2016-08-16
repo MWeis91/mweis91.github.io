@@ -556,14 +556,19 @@ footer
 .Projects
 {
     background-color: #E6EDED;
+    
+    padding-bottom: 20px;
 }
 
 .ProjContainer
 {
+    display: flex;
     flex-direction: column;
     background-color: #41474F;
-    border-radius: 10px;
+    border-radius: 10px;  
     
+    min-width: fit-content;
+    overflow: hidden;
 }
 .ProjSubcontainer
 {
@@ -587,9 +592,10 @@ footer
 .ProjContent
 {
     font-weight: 600;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left:20px;
     padding-right:20px;
+    
 }
 
 .ProjContent p
@@ -597,26 +603,72 @@ footer
     text-indent: 40px;
     padding: 0;
     margin: 0;
+
+    
 }
+
+.ProjContent ul
+{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+
 
 .ProjImages
 {    
     display: flex;
+    flex-direction: column;
+    
     background-color: #3BABE8;
     
     border-radius: 10px;
     
+    margin: 0 auto;
+    
+    padding: 0;
 
-    margin: 10px auto;
+    width: min-content;
+    height: min-content;
+    overflow: no-display;
+}
 
-    width: fit-content;
-    height: fit-content;
+.ProjImages p
+{
+    font-style: italic;
+    color: #41474F;
+    padding: 10px 0;
+    margin: 0 auto;
 }
 
 #GameEnginePicture
 {
-   border-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
    opacity: 0.85;
-   height: 400px;
+   height: 500px;
 }
 
+.GithubLink
+{
+    float: right;
+    margin-top: 20px;
+    
+}
+
+.GithubLink a
+{
+    text-decoration: underline;
+    color: #3BABE8;
+    font-style: italic;
+}
+
+#EnigmaMachinePicture
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.80;
+    max-height: 550px;
+}

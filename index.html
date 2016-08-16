@@ -52,14 +52,12 @@
                             <div class="Content">
                                 <div class="PersonalStatement">
                                     <p>
-                                    Hello, World! My name is Matthew and I’m a Software Engineer, husband, animal lover, and a lifetime gamer.
-                                    I have recently graduated from University of South Florida with a degree in Computer Science. When I’m not
-                                    working on a software project, you can find me hiking a new trail with my wife or playing Civilization V 
-                                    for 1 more turn...
+                                    Hello, World! My name is Matthew and I’m a software engineer, husband, animal lover, and a lifetime gamer.
+                                    I have recently graduated from University of South Florida with a degree in computer science.
                                     </p>
                                     <p>
-                                    While working towards my education, I discovered a strong interest in Game Development, more specifically
-                                    in Game Engines and how they work. The challenge of using only logic and syntax to solve a complex problem
+                                    While working towards my education, I discovered a strong interest in game development, more specifically
+                                    in game engines and how they work. The challenge of using only logic and syntax to solve a complex problem
                                     such as simulating physics in the context of real-time constraints is what drew my interest this subject.
                                     </p>
                                     <p>
@@ -67,8 +65,8 @@
                                     better the lives of others and surround myself with people that share the same passionate drive and vision.
                                     </p>
                                     <p>
-                                    Check out my project section below to get a feel of my previous work. You can also contact me using any of
-                                    the methods at the bottom of the page!
+                                    Check out my project section or take a look at my Github to get a feel of my previous work. You can also contact me using any of
+                                    the methods at the bottom of the page.
                                     </p>
                                     <div class="Quote">
                                     <q>
@@ -202,8 +200,8 @@
                                                 <div class="HoverContent">
                                                     <ul>
                                                         <li>Comfortable developing in both environments</li>
-                                                        <li>Primarily use Visual Studio for Windows</li>
-                                                        <li>Primarily use basic text editor and VIM for Linux</li>
+                                                        <li>Visual Studio preferred development environment for Windows</li>
+                                                        <li>Basic text editor and VIM preferred development environment for Linux</li>
                                                     </ul>
                                                 </div>
 
@@ -257,12 +255,11 @@
                                     <div class="ProjContent">
                                         <p>
                                             This was a multi-semester independent study where I
-                                            researched and developed a simple game engine. From the
-                                            beginning of this project, I had little experience
-                                            with game development and wanted to know what went on
-                                            in the back end of a video game. In order to accommodate
-                                            this thirst for knowledge, I decided to make my own game
-                                            engine. 
+                                            researched and developed a simple game engine. Before
+                                            I started this project, I had little experience with 
+                                            game development, but I was very interested in what 
+                                            goes on in the back end of a video game. To this end, 
+                                            I decided to make my own game engine from the ground up.
                                         </p>
                                         <br>
                                         <p>
@@ -290,15 +287,36 @@
                                         </p>
                                         <ul>
                                             <li>Game loop design.</li>
-                                            <li></li>
+                                            <li>Decoupling physics calculations from render time.</li>
                                             <li>Runge-Kutta method (RK4) integrator for physics calculations.</li>
                                             <li>Integrating and interpolating object states.</li>
                                             <li>Quaternion rotations.</li>
                                             <li>World and body coordinates.</li>
                                         </ul>
                                         
+                                        <p>
+                                            This project provided me a great opportunity to research higher
+                                            level concepts and implement them in a codebase that is larger
+                                            than any other school project I had previously worked on.
+                                            While there were many game engine concepts that I was able to 
+                                            research in depth, I was unable to implement all of
+                                            them into my game engine due to time constraints. Some of the unimplemented features
+                                            I did extensive research on include:
+                                        </p>
+                                        <ul>                                           
+                                            <li>Hitboxes: Axis-aligned, bounding spheres, etc.</li>
+                                            <li>Collision detection and handling.</li>
+                                            <li>Bounded volume hierarchy: KD-trees, octrees, etc.</li>
+                                            <li>Shadow mapping.</li>
+                                            <li>Scripting engine.</li>
+                                        </ul>
+                                        
                                         <div class="ProjImages">
                                             <img id="GameEnginePicture" src="img/Game-Engine-Picture.png" title="Game Engine Test" alt="none">
+                                            <p>Testing an object fall due to gravity.</p>
+                                        </div>
+                                        <div class="GithubLink">
+                                            <a href="https://github.com/MWeis91/GameDev" target="_blank">Github Project Link.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -306,25 +324,35 @@
                                 <div class ="ProjSubcontainer">
                                     <div class="ProjTitle">Enigma Machine</div>
                                     <div class="ProjContent">
-
+                                        <p>
+                                            This was a group project for <i>Advanced Discrete Structures</i> in which
+                                            I developed a working software replica of an enigma machine, the same 
+                                            type of encryption machine used during WWII. My contribution for this
+                                            project was the creation and development of all the software and GUI components.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            An enigma machine employs a relatively simple algorithm where plain text
+                                            is fed into the machine one character at a time and is mapped to a different
+                                            character through a system of rotors. The key to strong encryption in an enigma
+                                            machine is to have the rotors change position and map a new set of character after every
+                                            step, thus preventing attempts at frequency analysis. While programming a software replica
+                                            of an enigma machine was relatively simple, developing an intuitive GUI for it proved to be an 
+                                            interesting challenge.
+                                        </p>
+                                        <br>
+                                        
+                                        <div class="ProjImages"> 
+                                            <img id="EnigmaMachinePicture" src="img/Enigma-Machine-Picture.png" title="Enigma Machine" alt="none">
+                                            <p>Example string encrypted.</p>
+                                        </div>
+                                        <div class="GithubLink">
+                                            <a href="https://github.com/MWeis91/Enigma-Machine" target="_blank">Github Project Link.</a>
+                                        </div>
                                     </div>
                                 </div>
 
-
-
-                                <div class ="ProjSubcontainer">
-                                    <div class="ProjTitle">Algorithms</div>
-                                    <div class="ProjContent">
-
-                                    </div>
-                                </div>
-
-                                <div class ="ProjSubcontainer">
-                                    <div class="ProjTitle">Database</div>
-                                    <div class="ProjContent">
-
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
